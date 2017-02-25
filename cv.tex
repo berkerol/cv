@@ -1,0 +1,93 @@
+\documentclass[a4paper, 10pt]{article}
+
+%Some useful packages
+\usepackage{color, parskip, titlesec}
+
+%For setting page layout
+\usepackage{geometry}
+\geometry{a4paper, left = 14mm, right = 14mm, top = 21mm, bottom = 21mm}
+
+%For changing font
+\usepackage[T1]{fontenc}
+\usepackage[defaultsans]{droidsans}
+\renewcommand*\familydefault{\sfdefault}
+
+%For hyperlinks
+\usepackage{hyperref}
+\definecolor{linkcolor}{RGB}{0, 0, 255}
+\hypersetup{colorlinks, urlcolor = linkcolor}
+
+%For section titles
+\definecolor{titlecolor}{RGB}{21,120,120}
+\titlespacing{\section}{0em}{0.6ex}{0.6ex}
+\titleformat{\section}{\Large\bfseries\color{titlecolor}}{}{0em}{}
+
+%For hiding page number
+\pagestyle{empty}
+
+\begin{document}
+
+{\setlength{\tabcolsep}{0.1cm}
+\begin{tabular}{r l}
+    \textbf{Location} & Istanbul, Turkey\\
+    \textbf{Phone} & +90 545 852 52 77\\
+    \textbf{Email} & \href{mailto:berk.erol@boun.edu.tr}{berk.erol@boun.edu.tr}
+\end{tabular}
+\hspace{1.15cm} {\Huge \textbf{BERK EROL}} \hspace{1.85cm}
+\begin{tabular}{r l}
+    \textbf{Website} & \href{https://berkerol.github.io}{berkerol.github.io}\\
+    \textbf{LinkedIn} & \href{https://www.linkedin.com/in/berk-erol}{in/berk-erol}\\
+    \textbf{GitHub} & \href{https://github.com/berkerol}{berkerol}
+\end{tabular}}
+
+\section{EDUCATION}
+\begin{tabular}{r p{15.7cm}}
+    Sep. 2014 & \textbf{B.S. in Computer Engineering} \hspace{1em} Bogazici University \hfill Istanbul, TR\\
+    June 2019 & \textbullet\ GPA: 3.03/4.00\\\\
+    Sep. 2009 & \textbf{Cagaloglu Anadolu Lisesi} \hfill Istanbul, TR\\
+    June 2014 & \textbullet\ GPA: 4.46/5.00
+\end{tabular}
+
+\section{EXPERIENCE}
+\begin{tabular}{r p{15.7cm}}
+    Oct. 2015 & \textbf{Student Teaching Assistant} \hspace{1em} Bogazici University \hfill Istanbul, TR\\
+    Jan. 2016 & \textbullet\ Taught freshmen algorithms, data structures, sorting and searching in C.
+\end{tabular}
+
+\section{SKILLS}
+{\renewcommand{\arraystretch}{0.7}
+\begin{tabular}{r p{15.4cm}}
+    \textbf{Proficient} & Java, C, C++\\\\
+    \textbf{Familiar} & Prolog, Unix \& Linux, Git\\\\
+    \textbf{Concepts} & Algorithms \& data structures, object-oriented programming\\\\
+    \textbf{Interests} & AI/ML/DL, AR/VR/MR, UI/UX, IoT, P2P, DApps, blockchain, cryptography, network, security\\\\
+    \textbf{Speaks} & Turkish (Native), English (Proficient), German (Fluent, C1 level of DSD II Certificate)
+\end{tabular}}
+
+\section{ACTIVITIES \& SOCIETIES}
+\begin{itemize}
+    \item \textbf{Open source projects on GitHub}\\
+        Software designed by myself, CV \& Website source code, school projects.
+    \item \textbf{Member of VRFirst BAU, Bahcesehir University (Since April 2016)}\\
+        Attended meetings, seminars, trainings and workshops. Learned new technologies and ongoing projects in the virtual reality lab (in partnership with Crytek).
+    \item \textbf{Participant in BIC Angels Startnowhow, Bogazici University (September 2015 - June 2016)}\\
+        Seminars about entrepreneurship and startups from both theoretical and practical perspectives with guest speakers from successful startups.
+    \item \textbf{Come Together'CMPE, Bogazici University (Nov. 2015)}\\
+        Met and networked with alumni and learned job opportunities.
+    \item \textbf{Social Innovation and Entrepreneurship Seminar, Bogazici University (Oct. 2015)}\\
+        Seminar by Bogazici University Technology Transfer Office and Young Guru Academy with certificate.
+    \item \textbf{Headguide at Sports Fest, Bogazici University (May 2015)}\\
+        Helped sportsmen all around the world during their stay and organized events at Sports Fest which is the Turkey's biggest student-organized sports festival.
+    \item \textbf{Member of BUNIS - Bogazici University Network of International Students \& ESN - European Student Network (2014 - 2015):}
+        Helped international students and organized events for them.
+    \item \textbf{Member of COMPEC - Bogazici University Computer Eng. Club (2014 - 2016), BÜYAK - Bogazici University Operations Research Club \& ESTIEM - European Students of Industrial Eng. and Management (2014)}\\
+        Contacted companies. Networked with business people. Organized and attended trainings, seminars, trips.
+    \item \textbf{Java and Android Training, Bogazici University (October 2014 - December 2014)}\\
+        Intense courses from the basics of the Java to a complete Android application with certificate.
+    \item \textbf{P\&G Finance Training, Bogazici University (November 2014)}\\
+        Seminar about financial leadership in product launches with certificate.
+    \item \textbf{Bogazici Marka Zirvesi, Bogazici University (November 2014)}\\
+        Intense 2-day branding and marketing seminar series with the participation of managers with certificate.
+\end{itemize}
+
+\end{document}
