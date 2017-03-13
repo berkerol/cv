@@ -1,1 +1,1 @@
-Here is <a href="Berk_Erol_CV.pdf" download>My CV</a>
+Here is <a href="Berk_Erol_CV.pdf" download>My CV</a>.
