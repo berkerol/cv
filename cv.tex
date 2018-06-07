@@ -1,12 +1,11 @@
-\documentclass[10pt]{article}
+\documentclass[a4paper, 10pt]{article}
 
-%A Few Useful Packages
-\RequirePackage{color, graphicx}
-\usepackage{parskip, titlesec, verbatim}
+%Some useful packages
+\usepackage{color, parskip, titlesec}
 
-%For setting page
+%For setting page layout
 \usepackage{geometry}
-\geometry{a4paper, left = 14mm, right = 14mm, top = 13mm, bottom = 13mm}
+\geometry{a4paper, left = 15mm, right = 15mm, top = 22mm, bottom = 23mm}
 
 %For changing font
 \usepackage[T1]{fontenc}
@@ -22,9 +21,10 @@
 \titlespacing{\section}{0pt}{0pt}{0pt}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 
-\begin{document}
-
+%For hiding page number
 \pagestyle{empty}
+
+\begin{document}
 
 \begin{center}
 	\begin{tabular}{l r}
@@ -32,75 +32,65 @@
 	\end{tabular}
 
 	\section{\textcolor[RGB]{200, 0, 0}{\textbf{Personal Info}}}
-	\begin{tabular}{l l}
-		\textbf{Address:} Kadikoy, Istanbul, Turkey                               & \textbf{Phone:} +90 545 852 52 77                                          \\
-		\textbf{Email:} \href{mailto:berk.erol@boun.edu.tr}{berk.erol@boun.edu.tr} & \textbf{Website:} \href{https://berkerol.github.io}{berkerol.github.io}    \\
-		\textbf{GitHub:} \href{https://github.com/berkerol}{berkerol}              & \textbf{LinkedIn:} \href{https://www.linkedin.com/in/berk-erol}{Berk Erol} \\
-		\textbf{Passport:} Valid until 2020                                       & \textbf{Driver License:} Category B
+	\begin{tabular}{l l l}
+		\textbf{Location:} Munich, Bavaria, Germany & \textbf{Email:} \href{mailto:berk.erol@boun.edu.tr}{berk.erol@boun.edu.tr} & \textbf{LinkedIn:} \href{https://www.linkedin.com/in/berk-erol}{in/berk-erol}\\
+		\textbf{Phone:} +49 177 3808772 & \textbf{Website:} \href{https://berkerol.github.io}{berkerol.github.io} & \textbf{GitHub:} \href{https://github.com/berkerol}{berkerol}
 	\end{tabular}
 \end{center}
 
 \section{\textcolor[RGB]{0, 100, 200}{\textbf{Education}}}
-\begin{tabular}{r | l}
-	2018 & Erasmus Program in Informatics, Technical University of Munich, Munich, Germany
-	\\\multicolumn{2}{c}{}
-	\\Expected June 2019 & B.S. in Computer Engineering, Bogazici University, Bebek, Istanbul, Turkey
-	\\2014 & Current GPA: 3.12/4.00 Comp. Eng. Avg.: 3.31/4.00
-	\\\multicolumn{2}{c}{}
-	\\2014 & Cagaloglu Anadolu Lisesi, Fatih, Istanbul, Turkey
-	\\2009 & GPA: 4.46/5.00
+\begin{tabular}{r | p{15.5cm}}
+	Aug. 2018 & \textbf{Erasmus Study in Informatics at Technical University of Munich, Munich, Germany}\\
+	Apr. 2018 & Courses: Social Gaming, Testing, Security Eng., Project Org. \& Mgmt. in SWE, Aug. Reality, 3D UIs\\
+	\multicolumn{2}{c}{}\\
+	June 2019 & \textbf{B.S. in Computer Engineering at Bogazici University, Istanbul, Turkey}\\
+	Sep. 2014 & Current GPA: 3.14/4.00 Comp. Eng. Avg.: 3.35/4.00\\
+	& Highest Grades: Analysis of Algorithms, Data Str. \& Algorithms, Systems Prog., OS, Prob. \& Statistics
 \end{tabular}
 
 \section{\textcolor[RGB]{100, 0, 200}{\textbf{Experience}}}
-\begin{tabular}{r | p{15cm}}
-	Now - May 2017 & \textbf{Student Ambassador in IBM, Istanbul, Turkey}
-	\\\multicolumn{2}{c}{}
-	\\August 2017 & \textbf{Software Engineering Intern in OBSS, Istanbul, Turkey}
-	\\July 2017 & Developing an advanced website with Spring and Bootstrap. It is about job advertisements for both applicants and HR specialists. It also uses Solr, LDAP server, authentication with LinkedIn.
-	\\\multicolumn{2}{c}{}
-	\\June 2017 & \textbf{Software Engineering Intern in Khan Academy, STFA Construction Group, Istanbul, Turkey}
-	\\ & Improving and maintaining the overall website. Fixing bugs, optimizing website performance, adding new features (some front-end elements and URL Rewrite).
-	\\\multicolumn{2}{c}{}
-	\\January 2016 & \textbf{Student Assistant in Computer Engineering Dep., Bogazici University, Istanbul, Turkey}
-	\\October 2015 & Teaching freshmen algorithms, data structures, sorting and searching in C.
+\begin{tabular}{r | p{15.5cm}}
+	Mar. 2018 & \textbf{Backend Engineer Intern at Carla Car Rental, Istanbul, Turkey}\\
+	Jan. 2018 & Made car search 1.5x faster by improving API requests, filters and sorts using Java 8 and Spring.\\
+	& Increased revenues and customer satisfaction by adding new car rental suppliers and insurance.\\
+	& Improved monitoring and error tracking by integrating Sentry for all error logs in the whole system.\\
+	\multicolumn{2}{c}{}\\
+	Aug. 2017 & \textbf{Software Engineer Intern at OBSS, Istanbul, Turkey}\\
+	July 2017 & Got the 2\textsuperscript{nd} place and won a prize in the contest by building a recruitment website from scratch\\
+	& using Java 8, Spring Boot, MySQL, Elasticsearch, Logstash, Maven and Docker. Available on \href{https://github.com/berkerol/joblex}{GitHub}.\\
+	\multicolumn{2}{c}{}\\
+	June 2017 & \textbf{Software Engineer Intern at Khan Academy TR, Istanbul, Turkey}\\
+	& Improved SEO by generating titles and URLs according to content for each page.\\
+	& Increased page load speeds by 30\%, fixed bugs and added frontend elements.\\
+	\multicolumn{2}{c}{}\\
+	Jan. 2018 & \textbf{Student Ambassador at IBM, Istanbul, Turkey}\\
+	Mar. 2017 & Attended meetings, seminars, trainings and workshops to learn IBM technologies.\\
+	\multicolumn{2}{c}{}\\
+	Jan. 2016 & \textbf{Student Teaching Assistant at Bogazici University, Istanbul, Turkey}\\
+	Oct. 2015 & Taught freshmen algorithms, data structures, sorting and searching in C.
 \end{tabular}
 
-\section{\textcolor[RGB]{0, 180, 120}{\textbf{Skills and Interests}}}
+\section{\textcolor[RGB]{0, 180, 120}{\textbf{Skills}}}
 \begin{itemize}
-	\item \textbf{Languages:} Turkish (Native), English (Proficient), German (Fluent, C1 level of DSD II Certificate)
-	\item \textbf{Fluent in:} C/C++/C\# \& Java \& Python and object-oriented programming
-	\item \textbf{Web Technologies:} HTML5, CSS3, JavaScript, ES6, jQuery, Bootstrap, ASP, PHP, Spring, SQL, Solr, LDAP
-	\item \textbf{Knowledge of:} Android, Prolog, Scheme, Smalltalk, MATLAB, Wolfram, Verilog, Assembly, \LaTeX, Unix, Git, AWS
-	\item \textbf{Interests:} Alternative energies, artificial intelligence, cryptography, graphic design, open source, virtual reality
+	\item \textbf{Proficient:} Java 8 (Spring Boot), JavaScript (ES6+), Git, REST APIs
+	\item \textbf{Familiar:} Python, C\#, C, C++, HTML5, CSS3, MySQL, Elasticsearch (ELK), Unix \& Linux, Docker, AWS
+	\item \textbf{Concepts:} Algorithms \& data structures, object-oriented programming, design patterns \& principles, Agile
+	\item \textbf{Interests:} AI/ML/DL, AR/VR/MR, UI/UX, IoT, P2P, DApps, blockchain, cryptography, network, security
+	\item \textbf{Speaks:} Turkish (Native), English (Proficient), German (Fluent, C1 level of DSD II Certificate)
 \end{itemize}
 
-\section{\textcolor[RGB]{200, 100, 0}{\textbf{Activities, Societies and Trainings}}}
+\section{\textcolor[RGB]{200, 100, 0}{\textbf{Activities \& Societies}}}
 \begin{itemize}
-	\item \textbf{Open source projects on GitHub: }
-	      Software designed by myself, CV \& Website source code, school projects.
-	\item \textbf{CoderDojo Mentor at COMPEC, Bogazici University (March 2017 - April 2017)}
-	      \\Voluntary work for helping children create basic games using the MIT's Scratch Tool.
-	\item \textbf{Member of VRFirst BAU, Bahcesehir University (Since April 2016): }
-	      Attending meetings, seminars, trainings and learning about new technologies and ongoing projects in the virtual reality lab.
-	\item \textbf{BIC Angels Startnowhow, Bogazici University (September 2015 - June 2016): }
-	      Courses about entrepreneurship and startups with guest speakers talking about the experiences and hardships of a startup.
-	\item \textbf{Headguide at Sports Fest, Bogazici University (May 2015): }
-	      Helping sportsmen all around the world during their stay and organizing events at Sports Fest which is the Turkey's biggest student-organized sports festival.
-	\item \textbf{Member of BUNIS - Bogazici University Network of International Students \& ESN - European Student Network (2014 - 2015): }
-	      Helping international students and organizing events for them.
-	\item \textbf{Member of COMPEC - Bogazici University Computer Eng. Club (2014 - 2016), BÜYAK - Bogazici University Operations Research Club \& ESTIEM - European Students of Industrial Eng. and Management (2014)}
-	      \\Contacting companies; networking with business people; organizing and attending trainings, seminars, trips.
-	\item \textbf{Java and Android Training, Bogazici University (October 2014 - December 2014)}
-	      \\Intense courses from the basics of the Java to a complete Android application with certificate.
+	\item \textbf{CoderDojo Mentor at COMPEC, Bogazici University (March 2017 - April 2017)}\\
+	Voluntary work for helping children to create basic games using the MIT's Scratch tool.
+	\item \textbf{Member of VRFirst BAU, Bahcesehir University (Since April 2016):}
+	Attended meetings, seminars, trainings and workshops. Learned about new technologies and ongoing projects in the virtual reality lab.
+	\item \textbf{Participant in BIC Angels Startnowhow, Bogazici University (September 2015 - June 2016)}\\
+	Seminars about entrepreneurship and startups with guest speakers from successful startups.
+	\item \textbf{Headguide at Sports Fest, Bogazici University (May 2015):}
+	Helped sportsmen all around the world during their stay and organized events at Sports Fest which is the Turkey's biggest student-organized sports festival.
+	\item \textbf{Member of COMPEC (Computer Eng. Club), BUYAK \& ESTIEM (Industrial Eng. Club) (2014 - 2016)}\\
+	Contacted companies; networked with business people; organized and attended seminars, trainings, trips.
 \end{itemize}
-
-\begin{comment}
-\item \textbf{Social Innovation and Entrepreneurship Seminar, Bogazici University (Oct. 2015)}
-\\Seminar by Bogazici University Technology Transfer Office and Young Guru Academy with certificate.
-\item \textbf{P\&G Finance Training, Bogazici University (November 2014)}
-\\Seminar about financial leadership in product launches with certificate.
-\item \textbf{Bogazici Marka Zirvesi, Bogazici University (November 2014)}
-\\Intense 2-day branding and marketing seminar series with the participation of managers with certificate.
-\end{comment}
 
 \end{document}
