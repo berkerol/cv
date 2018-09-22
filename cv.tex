@@ -5,7 +5,7 @@
 
 %For setting page layout
 \usepackage{geometry}
-\geometry{a4paper, left = 15mm, right = 15mm, top = 22mm, bottom = 23mm}
+\geometry{a4paper, left = 14mm, right = 14mm, top = 23mm, bottom = 23mm}
 
 %For changing font
 \usepackage[T1]{fontenc}
@@ -14,72 +14,71 @@
 
 %For hyperlinks
 \usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0, 0.2, 0.6}
-\hypersetup{colorlinks, breaklinks, urlcolor = linkcolour, linkcolor = linkcolour}
+\definecolor{linkcolor}{RGB}{0, 0, 255}
+\hypersetup{colorlinks, urlcolor = linkcolor}
 
 %For section titles
-\titlespacing{\section}{0pt}{0pt}{0pt}
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\definecolor{titlecolor}{RGB}{21,120,120}
+\titlespacing{\section}{0em}{0.6ex}{0.6ex}
+\titleformat{\section}{\Large\bfseries\color{titlecolor}}{}{0em}{}
 
 %For hiding page number
 \pagestyle{empty}
 
 \begin{document}
 
-\begin{center}
-	\begin{tabular}{l r}
-		{\Huge \textsc{\textbf{Berk Erol}}} & {\Large \textsc{Computer Engineer}}
-	\end{tabular}
+{\setlength{\tabcolsep}{0.1cm}
+\begin{tabular}{r l}
+	\textbf{Location} & Istanbul, Turkey\\
+	\textbf{Phone} & +90 545 852 52 77\\
+	\textbf{Email} & \href{mailto:berk.erol@boun.edu.tr}{berk.erol@boun.edu.tr}
+\end{tabular}
+\hspace{1.4cm} {\Huge \textbf{BERK EROL}} \hspace{1.6cm}
+\begin{tabular}{r l}
+	\textbf{Website} & \href{https://berkerol.github.io}{berkerol.github.io}\\
+	\textbf{LinkedIn} & \href{https://www.linkedin.com/in/berk-erol}{in/berk-erol}\\
+	\textbf{GitHub} & \href{https://github.com/berkerol}{berkerol}
+\end{tabular}}
 
-	\section{\textcolor[RGB]{200, 0, 0}{\textbf{Personal Info}}}
-	\begin{tabular}{l l l}
-		\textbf{Location:} Istanbul, Turkey & \textbf{Email:} \href{mailto:berk.erol@boun.edu.tr}{berk.erol@boun.edu.tr} & \textbf{LinkedIn:} \href{https://www.linkedin.com/in/berk-erol}{in/berk-erol}\\
-		\textbf{Phone:} +90 545 852 52 77 & \textbf{Website:} \href{https://berkerol.github.io}{berkerol.github.io} & \textbf{GitHub:} \href{https://github.com/berkerol}{berkerol}
-	\end{tabular}
-\end{center}
-
-\section{\textcolor[RGB]{0, 100, 200}{\textbf{Education}}}
-\begin{tabular}{r | p{15.5cm}}
-	June 2019 & \textbf{B.S. in Computer Engineering at Bogazici University, Istanbul, Turkey}\\
-	Sep. 2014 & Current GPA: 3.14/4.00 Comp. Eng. Avg.: 3.35/4.00\\
-	& Highest Grades: Analysis of Algorithms, Data Str. \& Algorithms, Systems Prog., OS, Prob. \& Statistics\\
-	\multicolumn{2}{c}{}\\
-	Aug. 2018 & \textbf{Erasmus Study in Informatics at Technical University of Munich, Munich, Germany}\\
-	Apr. 2018 & Courses: Social Gaming, Testing, Security Eng., Project Org. \& Mgmt. in SWE, Aug. Reality, 3D UIs
+\section{EDUCATION}
+\begin{tabular}{r p{15.7cm}}
+	June 2019 & \textbf{B.S. in Computer Engineering} \hspace{1em} Bogazici University \hfill Istanbul, Turkey\\
+	Sep. 2014 & \textbullet\ Current GPA: 3.14/4.00 Comp. Eng. Avg.: 3.35/4.00\\
+	& \textbullet\ Highest Grades: Analysis of Algorithms, Data Str. \& Algorithms, Systems Prog., OS, Prob. \& Statistics\\\\
+	Aug. 2018 & \textbf{Erasmus Study in Informatics} \hspace{1em} Technical University of Munich \hfill Munich, Germany\\
+	Apr. 2018 & \textbullet\ Courses: Social Gaming, Testing, Security Eng., Project Org. \& Mgmt. in SWE, Aug. Reality, 3D UIs
 \end{tabular}
 
-\section{\textcolor[RGB]{100, 0, 200}{\textbf{Experience}}}
-\begin{tabular}{r | p{15.5cm}}
-	Mar. 2018 & \textbf{Backend Engineer Intern at Carla Car Rental, Istanbul, Turkey}\\
-	Jan. 2018 & Made car search 1.5x faster by improving API requests, filters and sorts using Java 8 and Spring.\\
-	& Increased revenues and customer satisfaction by adding new car rental suppliers and insurance.\\
-	& Improved monitoring and error tracking by integrating Sentry for all error logs in the whole system.\\
-	\multicolumn{2}{c}{}\\
-	Aug. 2017 & \textbf{Software Engineer Intern at OBSS, Istanbul, Turkey}\\
-	July 2017 & Got the 2\textsuperscript{nd} place and won a prize in the contest by building a recruitment website from scratch\\
-	& using Java 8, Spring Boot, MySQL, Elasticsearch, Logstash, Maven and Docker. Available on \href{https://github.com/berkerol/joblex}{GitHub}.\\
-	\multicolumn{2}{c}{}\\
-	June 2017 & \textbf{Software Engineer Intern at Khan Academy TR, Istanbul, Turkey}\\
-	& Improved SEO by generating titles and URLs according to content for each page.\\
-	& Increased page load speeds by 30\%, fixed bugs and added frontend elements.\\
-	\multicolumn{2}{c}{}\\
-	Jan. 2018 & \textbf{Student Ambassador at IBM, Istanbul, Turkey}\\
-	Mar. 2017 & Attended meetings, seminars, trainings and workshops to learn IBM technologies.\\
-	\multicolumn{2}{c}{}\\
-	Jan. 2016 & \textbf{Student Teaching Assistant at Bogazici University, Istanbul, Turkey}\\
-	Oct. 2015 & Taught freshmen algorithms, data structures, sorting and searching in C.
+\section{EXPERIENCE}
+\begin{tabular}{r p{15.7cm}}
+	Mar. 2018 & \textbf{Backend Engineer Intern} \hspace{1em} Carla Car Rental \hfill Istanbul, Turkey\\
+	Jan. 2018 & \textbullet\ Made car search 1.5x faster by improving API requests, filters and sorts using Java 8 and Spring.\\
+	& \textbullet\ Increased revenues and customer satisfaction by adding new car rental suppliers and insurance.\\
+	& \textbullet\ Increased customer engagement by building a localization system for 6 languages to cover all texts.\\
+	& \textbullet\ Improved monitoring and error tracking by integrating Sentry for all error logs in the whole system.\\\\
+	Aug. 2017 & \textbf{Software Engineer Intern} \hspace{1em} OBSS \hfill Istanbul, Turkey\\
+	July 2017 & \textbullet\ Got the 2\textsuperscript{nd} place and won a prize in the contest by building a recruitment website from scratch\\
+	& using Java 8, Spring Boot, MySQL, Elasticsearch, Logstash, Maven and Docker. Available on \href{https://github.com/berkerol/joblex}{GitHub}.\\\\
+	June 2017 & \textbf{Software Engineer Intern} \hspace{1em} Khan Academy TR \hfill Istanbul, Turkey\\
+	& \textbullet\ Improved SEO by generating titles and URLs according to content for each page.\\
+	& \textbullet\ Increased page load speeds by 30\%, fixed bugs and added frontend elements.\\\\
+	Jan. 2018 & \textbf{Student Ambassador} \hspace{1em} IBM \hfill Istanbul, Turkey\\
+	Mar. 2017 & \textbullet\ Attended meetings, seminars, trainings and workshops to learn IBM technologies.\\\\
+	Jan. 2016 & \textbf{Student Teaching Assistant} \hspace{1em} Bogazici University \hfill Istanbul, Turkey\\
+	Oct. 2015 & \textbullet\ Taught freshmen algorithms, data structures, sorting and searching in C.
 \end{tabular}
 
-\section{\textcolor[RGB]{0, 180, 120}{\textbf{Skills}}}
-\begin{itemize}
-	\item \textbf{Proficient:} Java 8 (Spring Boot), JavaScript (ES6+), Git, REST APIs
-	\item \textbf{Familiar:} Python, C\#, C, C++, HTML5, CSS3, MySQL, Elasticsearch (ELK), Unix \& Linux, Docker, AWS
-	\item \textbf{Concepts:} Algorithms \& data structures, object-oriented programming, design patterns \& principles, Agile
-	\item \textbf{Interests:} AI/ML/DL, AR/VR/MR, UI/UX, IoT, P2P, DApps, blockchain, cryptography, network, security
-	\item \textbf{Speaks:} Turkish (Native), English (Proficient), German (Fluent, C1 level of DSD II Certificate)
-\end{itemize}
+\section{SKILLS}
+{\renewcommand{\arraystretch}{0.7}
+\begin{tabular}{r p{15.4cm}}
+	\textbf{Proficient} & Java 8 (Spring Boot), JavaScript (ES6+), Git, REST APIs\\\\
+	\textbf{Familiar} & Python, C\#, C, C++, HTML5, CSS3, MySQL, Elasticsearch (ELK), Unix \& Linux, Docker, AWS\\\\
+	\textbf{Concepts} & Algorithms \& data structures, object-oriented programming, design patterns \& principles, Agile\\\\
+	\textbf{Interests} & AI/ML/DL, AR/VR/MR, UI/UX, IoT, P2P, DApps, blockchain, cryptography, network, security\\\\
+	\textbf{Speaks} & Turkish (Native), English (Proficient), German (Fluent, C1 level of DSD II Certificate)
+\end{tabular}}
 
-\section{\textcolor[RGB]{200, 100, 0}{\textbf{Activities \& Societies}}}
+\section{ACTIVITIES \& SOCIETIES}
 \begin{itemize}
 	\item \textbf{CoderDojo Mentor at COMPEC, Bogazici University (March 2017 - April 2017)}\\
 	Voluntary work for helping children to create basic games using the MIT's Scratch tool.
